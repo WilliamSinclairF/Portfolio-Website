@@ -1,0 +1,15 @@
+.navContainer {
+  width: 100%;
+}
+
+.linkList {
+  list-style: none;
+}
+
+.listItem {
+  display: inline;
+  padding: 0.5rem;
+}
+
+.link {
+}

@@ -1,0 +1,60 @@
+/* typography */
+.t-largest {
+  font-size: 4rem;
+}
+
+.t-large {
+  font-size: 3rem;
+}
+
+.t-medium {
+  font-size: 2rem;
+}
+
+.t-small {
+  font-size: 1rem;
+}
+
+/* text placement */
+
+.text-center {
+  text-align: center;
+}
+
+/* content placement */
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+/* padding */
+
+.p-s {
+  padding: 0.5rem;
+}
+
+.p-m {
+  padding: 1rem;
+}
+
+.p-l {
+  padding: 1.5rem;
+}
+
+/* margin */
+
+.m-s {
+  margin: 0.5rem;
+}
+
+.m-m {
+  margin: 1rem;
+}
+
+.m-l {
+  margin: 1.5rem;
+}
