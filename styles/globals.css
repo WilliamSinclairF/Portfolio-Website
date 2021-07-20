@@ -11,6 +11,15 @@ a {
   text-decoration: none;
 }
 
+section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.mainColorBg {
+  background-color: #002c59;
 }

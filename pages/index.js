@@ -1,8 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import Button from '../components/Button';
+import NavBar from '../components/NavBar';
+import ProjectList from '../components/ProjectList';
+import SkillList from '../components/SkillList';
+import Background from '../components/Background';
 
 const heroLinks = [
   { name: 'Projects', link: '/projects' },
@@ -11,26 +15,48 @@ const heroLinks = [
 
 export default function Home() {
   return (
-    <Layout>
-      <header className={styles.hero}>
-        <span className="t-largest text-center block p-l">
-          Hi, I'm William! <br /> I'm a software developer from beautiful Montreal.
-        </span>
-        <span className="t-medium text-center block m-m">
-          I'm a fearless learner who's passionate about learning new technologies.
-        </span>
-        <span className="t-small text-center block m-l">While you're here, why not check these pages out:</span>
-        <div className="text-center">
-          {heroLinks.map((i) => (
-            <div className="inline p-m">
+    <>
+      <div className={styles.heroBg}>
+        <NavBar />
+        <Layout>
+          <header className={styles.hero}>
+            <span className="t-largest block p-l white fw-l">
+              Hi, I'm William! <br /> I'm a software developer based in beautiful Montreal.
+            </span>
+            <span className="t-medium block m-m white">
+              I'm a fearless learner who's passionate about learning new technologies.
+            </span>
+            {/* <span className="t-small text-center block m-l white fw-l">
+            While you're here, why not check these pages out:
+          </span>
+          <div className="text-center">
+            {heroLinks.map((i) => (
               <Link href={i.link}>
-                <a>{i.name}</a>
+                <Button label={i.name}></Button>
               </Link>
-            </div>
-          ))}
-        </div>
-      </header>
-      <main></main>
-    </Layout>
+            ))}
+          </div> */}
+          </header>
+        </Layout>
+      </div>
+
+      <section>
+        <Layout>
+          <ProjectList />
+        </Layout>
+      </section>
+
+      <section className={styles.skillsBg}>
+        <Layout>
+          <SkillList />
+        </Layout>
+      </section>
+
+      <section>
+        <Layout>
+          <Background />
+        </Layout>
+      </section>
+    </>
   );
 }

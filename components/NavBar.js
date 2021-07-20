@@ -1,6 +1,6 @@
-import styles from '../styles/Header.module.css';
-import Layout from './Layout';
+import styles from '../styles/NavBar.module.css';
 import Link from 'next/link';
+import { useRouter } from 'next/dist/client/router';
 
 const navItems = [
   { name: 'Home', link: '/' },
@@ -8,20 +8,21 @@ const navItems = [
   { name: 'About me', link: '/about-me' },
 ];
 
-export default function Header() {
+export default function NavBar() {
+  const router = useRouter();
   return (
-    <nav className={styles.navContainer}>
-      <Layout>
+    <div className={styles.container}>
+      <nav className={`${styles.navContainer} p-l`}>
         <ul className={styles.linkList}>
           {navItems.map((i) => (
-            <li className={styles.listItem}>
+            <li className={`${styles.listItem} ${router.pathname === i.link ? styles.active : ''}`}>
               <Link href={i.link}>
                 <a className={styles.link}>{i.name}</a>
               </Link>
             </li>
           ))}
         </ul>
-      </Layout>
-    </nav>
+      </nav>
+    </div>
   );
 }

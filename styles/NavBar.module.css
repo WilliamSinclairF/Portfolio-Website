@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navContainer {
+  position: sticky;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listItem {
+  display: inline;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.link {
+}
+
+.active {
+  color: white;
+}
