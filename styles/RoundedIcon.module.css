@@ -1,0 +1,14 @@
+.roundedIcon {
+  border-radius: 50%;
+  border: 1px solid blueviolet;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 55px;
+  height: 55px;
+}
+
+.roundedIcon:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

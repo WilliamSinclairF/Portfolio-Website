@@ -15,7 +15,12 @@ export default function NavBar() {
       <nav className={`${styles.navContainer} p-l`}>
         <ul className={styles.linkList}>
           {navItems.map((i) => (
-            <li className={`${styles.listItem} ${router.pathname === i.link ? styles.active : ''}`}>
+            <li
+              className={`${styles.listItem} ${
+                router.pathname === i.link && router.pathname !== '/' ? styles.active : ''
+              }`}
+              key={i.name}
+            >
               <Link href={i.link}>
                 <a className={styles.link}>{i.name}</a>
               </Link>

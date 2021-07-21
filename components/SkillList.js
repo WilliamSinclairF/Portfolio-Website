@@ -9,14 +9,13 @@ const miscSkills = ['Git', 'Jira', 'Cloud', '...And always ready to learn more']
 
 export default function SkillList() {
   return (
-    <>
-      <SectionHeader title="Skills" />
+    <div className="m-m h-100">
       <div className={styles.container}>
         <SkillColumn header="Front End" skills={frontEndSkills} />
         <SkillColumn header="Back End" skills={backEndSkills} />
         <SkillColumn header="Databases" skills={databaseSkills} />
         <SkillColumn header="Other" skills={miscSkills} />
       </div>
-    </>
+    </div>
   );
 }

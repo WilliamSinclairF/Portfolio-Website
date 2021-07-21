@@ -31,21 +31,20 @@ const projects = [
 export default function ProjectList() {
   return (
     <>
-      <SectionHeader title="Recent Projects" />
       <div className={styles.projectsContainer}>
         {projects.map((p) => (
-          <div className={styles.card}>
-            <div className="w-100 text-center p-s">
+          <div className={styles.card} key={p.name}>
+            <div className="text-center p-s">
               <span className="t-medium">{p.name}</span>
             </div>
             <div className="text-center">
-              <Image src={placeholderImage} height="200" width="200" />
+              <Image src={placeholderImage} height="200" width="200" alt="Project photo" />
             </div>
-            <div className="w-100 text-center">
+            <div className="text-center">
               <span className>{p.description}</span>
             </div>
-            <div className="w-100 text-center p-s">
-              <Link href="">
+            <div className="text-center p-s">
+              <Link href="" passHref>
                 <Button label="See more"></Button>
               </Link>
             </div>
