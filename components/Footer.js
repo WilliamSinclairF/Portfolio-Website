@@ -22,12 +22,6 @@ export default function Footer() {
           </RoundedIcon>
         </a>
       </span>
-
-      <span className="t-small w-100 m-s">
-        Made with&nbsp;
-        <FontAwesomeIcon icon={faHeart} />
-        &nbsp;by yours truly
-      </span>
     </footer>
   );
 }
