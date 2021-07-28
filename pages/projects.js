@@ -10,7 +10,6 @@ export default function Projects() {
     <>
       <Head>
         <title>Projects</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <section className="mainColorBg">
         <NavBar />

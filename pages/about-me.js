@@ -11,7 +11,6 @@ export default function AboutMe() {
     <>
       <Head>
         <title>About Me</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <section className="mainColorBg" style={{ color: 'white' }}>
         <NavBar />
