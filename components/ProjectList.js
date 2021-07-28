@@ -3,7 +3,6 @@ import Button from './Button';
 import Link from 'next/link';
 import Image from 'next/image';
 import placeholderImage from '../public/images/placeholder.jpg';
-import SectionHeader from './SectionHeader';
 
 const projects = [
   {

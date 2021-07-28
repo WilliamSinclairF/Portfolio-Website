@@ -2,14 +2,12 @@ import styles from '../styles/Footer.module.css';
 import RoundedIcon from './RoundedIcon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import SectionHeader from './SectionHeader';
-import Button from './Button';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
     <footer className={styles.container}>
-      <span className="t-medium m-m w-100">Let's chat!</span>
+      <span className="t-medium m-m w-100">Let&apos;s chat!</span>
       <span>
         You can find me on&nbsp;
         <a href="https://www.linkedin.com/in/williamsinclairf/" target="_blank" rel="noreferrer">

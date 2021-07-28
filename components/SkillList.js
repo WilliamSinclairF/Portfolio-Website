@@ -1,4 +1,3 @@
-import SectionHeader from './SectionHeader';
 import styles from '../styles/SkillList.module.css';
 import SkillColumn from './SkillColumn';
 
