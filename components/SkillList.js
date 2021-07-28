@@ -9,7 +9,7 @@ const miscSkills = ['Git', 'Jira', 'Cloud', '...And always ready to learn more']
 
 export default function SkillList() {
   return (
-    <div className="m-m h-100">
+    <div className="m-m">
       <div className={styles.container}>
         <SkillColumn header="Front End" skills={frontEndSkills} />
         <SkillColumn header="Back End" skills={backEndSkills} />

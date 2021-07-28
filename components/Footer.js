@@ -6,32 +6,30 @@ import { faGithub, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg
 import SectionHeader from './SectionHeader';
 import Button from './Button';
 
-export default function Footer({ children }) {
+export default function Footer() {
   return (
     <footer className={styles.container}>
-      {children}
-      <span className="t-medium">
-        Let's chat! You can find me on&nbsp;
+      <span className="t-medium m-m w-100">Let's chat!</span>
+      <span>
+        You can find me on&nbsp;
         <a href="https://www.linkedin.com/in/williamsinclairf/" target="_blank" rel="noreferrer">
           <RoundedIcon>
-            <FontAwesomeIcon icon={faLinkedinIn} color="blueviolet" />
+            <FontAwesomeIcon icon={faLinkedinIn} color="white" />
           </RoundedIcon>
         </a>
         &nbsp;and&nbsp;
         <a href="https://github.com/WilliamSinclairF" target="_blank" rel="noreferrer">
           <RoundedIcon>
-            <FontAwesomeIcon icon={faGithub} color="blueviolet" size="sm" />
+            <FontAwesomeIcon icon={faGithub} color="white" size="sm" />
           </RoundedIcon>
         </a>
       </span>
 
-      <div className={styles.bottomBorder}>
-        <span className="t-small">
-          Made with&nbsp;
-          <FontAwesomeIcon icon={faHeart} />
-          &nbsp;by yours truly
-        </span>
-      </div>
+      <span className="t-small w-100 m-s">
+        Made with&nbsp;
+        <FontAwesomeIcon icon={faHeart} />
+        &nbsp;by yours truly
+      </span>
     </footer>
   );
 }

@@ -1,11 +1,16 @@
 .container {
   width: 100%;
   text-align: center;
+  background: rgb(34, 193, 195);
+  background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(132, 45, 253, 1) 100%);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .w100 {
   width: 100%;
-  padding: 1rem;
 }
 
 .bottomBorder {
@@ -17,6 +22,4 @@
   flex-direction: column;
   width: 100%;
   color: white;
-  background: rgb(34, 193, 195);
-  background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(132, 45, 253, 1) 100%);
 }
