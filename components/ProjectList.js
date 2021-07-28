@@ -40,7 +40,7 @@ export default function ProjectList() {
               <Image src={placeholderImage} height="200" width="200" alt="Project photo" />
             </div>
             <div className="text-center">
-              <span className>{p.description}</span>
+              <span>{p.description}</span>
             </div>
             <div className="text-center p-s">
               <Link href="" passHref>

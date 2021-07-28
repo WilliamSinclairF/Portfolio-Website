@@ -3,12 +3,30 @@
   font-size: 4rem;
 }
 
+@media screen and (max-width: 767px) {
+  .t-largest {
+    font-size: 3rem;
+  }
+}
+
 .t-large {
   font-size: 3rem;
 }
 
+@media screen and (max-width: 767px) {
+  .t-large {
+    font-size: 2.5rem;
+  }
+}
+
 .t-medium {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .t-medium {
+    font-size: 1.5rem;
+  }
 }
 
 .t-small {
@@ -66,8 +84,20 @@
   padding: 1rem;
 }
 
+@media screen and (max-width: 767px) {
+  .p-m {
+    padding: 0.5rem;
+  }
+}
+
 .p-l {
   padding: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .p-l {
+    padding: 1rem;
+  }
 }
 
 /* margin */
@@ -80,8 +110,20 @@
   margin: 1rem;
 }
 
+@media screen and (max-width: 767px) {
+  .m-m {
+    margin: 0.5rem;
+  }
+}
+
 .m-l {
   margin: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .m-l {
+    margin: 1rem;
+  }
 }
 
 .m-auto {

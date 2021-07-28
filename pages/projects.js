@@ -16,7 +16,6 @@ export default function Projects() {
         <NavBar />
         <Layout>
           <SectionHeader title="Recent Projects" color="white" />
-
           <ProjectList />
         </Layout>
       </section>
