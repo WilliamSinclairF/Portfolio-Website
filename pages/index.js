@@ -32,7 +32,7 @@ export default function Home() {
         </Layout>
       </div>
 
-      <section>
+      <section style={{ height: '100vh' }}>
         <Layout>
           <SectionHeader title="About Me" color="black" />
           <p style={{ fontSize: '1.5rem' }} className="text-center">
