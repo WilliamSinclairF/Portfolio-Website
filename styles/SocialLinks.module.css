@@ -1,0 +1,11 @@
+.socialLink {
+  height: 35px;
+  color: white;
+  margin: 0rem 1.5rem;
+}
+
+@media screen and (max-width: 640px) {
+  .socialLink {
+    height: 25px;
+  }
+}

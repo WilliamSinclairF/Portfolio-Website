@@ -13,8 +13,77 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  background: #002c59;
+  color: white;
+  cursor: default;
 }
 
-.mainColorBg {
-  background-color: #002c59;
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.sectionTitle {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 56px;
+  width: max-content;
+  max-width: 100%;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionTitle {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 12px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .sectionTitle {
+    font-size: 32px;
+    line-height: 40px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 8px;
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+.sectionText {
+  max-width: 800px;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 300;
+  padding-bottom: 3.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .sectionText {
+    max-width: 670px;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .sectionText {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 16px;
+  }
 }

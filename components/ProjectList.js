@@ -1,8 +1,9 @@
 import styles from '../styles/ProjectList.module.css';
-import Button from './Button';
+import Button from './common/Button';
 import Link from 'next/link';
 import Image from 'next/image';
 import placeholderImage from '../public/images/placeholder.jpg';
+import SectionHeader from './common/SectionHeader';
 
 const projects = [
   {
@@ -30,6 +31,8 @@ const projects = [
 export default function ProjectList() {
   return (
     <>
+      <SectionHeader title="Recent Projects" />
+
       <div className={styles.projectsContainer}>
         {projects.map((p) => (
           <div className={styles.card} key={p.name}>
