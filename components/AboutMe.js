@@ -1,15 +1,9 @@
 import React from 'react';
-import { Divider } from './common/Divider';
 import SectionHeader from './common/SectionHeader';
-import SkillList from './SkillList';
 
 export const AboutMe = () => {
   return (
     <>
-      <SectionHeader title="Skills" />
-      <SkillList />
-      <Divider />
-
       <SectionHeader title="About Me" />
       <p className="sectionText">
         I have a background in technical support and incidentally, this is what made me want to become a developer. My

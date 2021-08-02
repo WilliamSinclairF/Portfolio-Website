@@ -1,4 +1,4 @@
-import styles from '../styles/SkillColumn.module.css';
+import styles from '../../styles/SkillColumn.module.css';
 
 export default function SkillColumn({ header, skills }) {
   return (

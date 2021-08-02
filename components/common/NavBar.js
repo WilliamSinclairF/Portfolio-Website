@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { SocialLinks } from './SocialLinks';
 
 const navItems = [
-  { name: 'Home', link: '/' },
-  { name: 'Projects', link: '/projects' },
-  { name: 'About me', link: '/about-me' },
+  { name: 'Projects', link: '#projects' },
+  { name: 'Skills', link: '#skills' },
+  { name: 'About me', link: '#about' },
 ];
 
 export default function NavBar() {

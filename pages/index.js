@@ -1,12 +1,11 @@
 import Head from 'next/head';
 import Layout from '../components/common/Layout';
 import ProjectList from '../components/ProjectList';
-import SkillList from '../components/SkillList';
-import SectionHeader from '../components/common/SectionHeader';
 import { Section } from '../components/common/Section';
 import { Hero } from '../components/Hero';
 import { AboutMe } from '../components/AboutMe';
 import { Divider } from '../components/common/Divider';
+import { Skills } from '../components/Skills/Skills';
 
 export default function Home() {
   return (
@@ -25,7 +24,12 @@ export default function Home() {
           <ProjectList />
         </Section>
 
-        <Section id="aboutme">
+        <Section id="skills">
+          <Divider />
+          <Skills />
+        </Section>
+
+        <Section id="about">
           <Divider />
           <AboutMe />
         </Section>

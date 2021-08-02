@@ -1,4 +1,4 @@
-import styles from '../styles/SkillList.module.css';
+import styles from '../../styles/SkillList.module.css';
 import SkillColumn from './SkillColumn';
 
 const frontEndSkills = ['HTML', 'CSS', 'Javascript', 'Typescript', 'React', 'Angular', 'AngularJS', 'Rails', 'JQuery'];
