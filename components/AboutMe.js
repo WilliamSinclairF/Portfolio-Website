@@ -1,10 +1,10 @@
 import React from 'react';
-import SectionHeader from './common/SectionHeader';
+import { SectionTitle } from '../styles/GlobalComponents';
 
 export const AboutMe = () => {
   return (
     <>
-      <SectionHeader title="About Me" />
+      <SectionTitle>About Me</SectionTitle>
       <p className="sectionText">
         I have a background in technical support and incidentally, this is what made me want to become a developer. My
         experience gave me a lot of empathy for end users as well as a deep understanding of what kind of impact

@@ -1,11 +1,11 @@
 import React from 'react';
-import SectionHeader from '../common/SectionHeader';
+import { SectionTitle } from '../../styles/GlobalComponents';
 import SkillList from './SkillList';
 
 export const Skills = () => {
   return (
     <>
-      <SectionHeader title="Skills" />
+      <SectionTitle>Skills</SectionTitle>
       <SkillList />
     </>
   );
