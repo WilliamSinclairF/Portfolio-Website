@@ -4,7 +4,7 @@ import { FooterContainer, FooterText } from './FooterStyles';
 export const Footer = () => {
   return (
     <FooterContainer>
-      <FooterText>Let's chat!</FooterText>
+      <FooterText>Let&apos;s chat!</FooterText>
       <SocialLinks />
     </FooterContainer>
   );
