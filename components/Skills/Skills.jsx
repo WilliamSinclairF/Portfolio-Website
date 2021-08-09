@@ -8,7 +8,6 @@ import {
   Skill,
   SkillColumnContainer,
   SkillsContainer,
-  SkillTitle,
 } from './SkillsStyles';
 
 import { backEndSkills, databaseSkills, frontEndSkills, miscSkills } from '../../constants/constants';
@@ -25,7 +24,7 @@ export const Skills = () => {
           </IconContainer>
           <SectionSubHeader white>Front End</SectionSubHeader>
           {frontEndSkills.map((skill) => (
-            <Skill>{skill}</Skill>
+            <Skill key={skill}>{skill}</Skill>
           ))}
         </SkillColumnContainer>
 
@@ -35,7 +34,7 @@ export const Skills = () => {
           </IconContainer>
           <SectionSubHeader white>Back End</SectionSubHeader>
           {backEndSkills.map((skill) => (
-            <Skill>{skill}</Skill>
+            <Skill key={skill}>{skill}</Skill>
           ))}
         </SkillColumnContainer>
 
@@ -45,7 +44,7 @@ export const Skills = () => {
           </IconContainer>
           <SectionSubHeader white>Databases</SectionSubHeader>
           {databaseSkills.map((skill) => (
-            <Skill>{skill}</Skill>
+            <Skill key={skill}>{skill}</Skill>
           ))}
         </SkillColumnContainer>
 
@@ -55,7 +54,7 @@ export const Skills = () => {
           </IconContainer>
           <SectionSubHeader white>Misc</SectionSubHeader>
           {miscSkills.map((skill) => (
-            <Skill>{skill}</Skill>
+            <Skill key={skill}>{skill}</Skill>
           ))}
         </SkillColumnContainer>
       </SkillsContainer>

@@ -17,8 +17,8 @@ export const Hero = () => {
       <SectionText center>
         I&apos;m a fearless software developer with a passion for learning based in Montreal.
       </SectionText>
-      <Button>Recent projects</Button>
-      <Button>A bit about me</Button>
+      <Button href="#projects">Recent projects</Button>
+      <Button href="#about">A bit about me</Button>
     </HeroContainer>
   );
 };
