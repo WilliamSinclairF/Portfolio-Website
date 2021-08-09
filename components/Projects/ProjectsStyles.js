@@ -19,6 +19,15 @@ export const ProjectsContainer = styled.div`
       '. .'
       '. .';
   }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      'main main'
+      '. .'
+      '. .';
+  }
 `;
 
 export const ProjectCard = styled.article`
