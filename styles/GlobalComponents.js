@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const SectionTitle = styled.h1`
   width: 100%;
+  color: ${(props) => (props.fontColor ? props.fontColor : props.theme.primary1)};
   text-align: ${(props) => (props.alignment ? props.alignment : 'center')};
   font-weight: 800;
   font-size: ${(props) => (props.main ? '62px' : '56px')};
@@ -31,7 +32,7 @@ export const SectionText = styled.p`
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: white;
+  color: ${(props) => (props.fontColor ? props.fontColor : props.theme.colors.primary2)};
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     font-size: 20px;
@@ -62,4 +63,12 @@ export const Section = styled.section`
     padding: 16px 16px 0;
     width: calc(100vw - 32px);
   }
+`;
+
+export const SectionSubHeader = styled.h3`
+  font-size: 24px;
+  color: ${({ white }) => (white ? 'white' : 'black')};
+  text-align: ${({ center }) => (center ? 'center' : '')};
+  font-weight: 800;
+  margin-bottom: 1rem;
 `;

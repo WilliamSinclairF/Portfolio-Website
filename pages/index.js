@@ -1,23 +1,17 @@
-import Head from 'next/head';
-import ProjectList from '../components/ProjectList';
 import { Hero } from '../components/Hero/Hero';
 import { AboutMe } from '../components/AboutMe';
-import { Divider } from '../components/common/Divider';
-import { Skills } from '../components/Skills/Skills';
 import Layout from '../components/common/Layout/Layout';
 import NavBar from '../components/common/Navbar/NavBar';
-import Footer from '../components/common/Footer';
 import { Section } from '../styles/GlobalComponents';
+import Projects from '../components/Projects/Projects';
+import { Skills } from '../components/Skills/Skills';
+import { Footer } from '../components/common/Footer/Footer';
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>William Sinclair&apos;s Portfolio</title>
-      </Head>
-
-      <NavBar />
-      <Layout bg="radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(132, 45, 253, 1) 100%)">
+      <Layout bg="linear-gradient(to right, rgba(34, 193, 195, 1), rgba(132, 45, 253, 1))">
+        <NavBar />
         <Section id="hero">
           <Hero />
         </Section>
@@ -25,24 +19,22 @@ export default function Home() {
 
       <Layout>
         <Section id="projects">
-          <Divider />
-          <ProjectList />
+          <Projects />
         </Section>
       </Layout>
 
-      <Layout>
+      <Layout bg="hsl(232.7,27.3%,23.7%)">
         <Section id="skills">
-          <Divider />
           <Skills />
         </Section>
       </Layout>
 
       <Layout>
-        <Section id="about">
-          <Divider />
+        <Section id="about" style={{ height: '50vh' }}>
           <AboutMe />
         </Section>
       </Layout>
+
       <Footer />
     </>
   );

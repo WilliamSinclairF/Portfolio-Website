@@ -1,24 +1,50 @@
 import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    'main main main'
+    '. . .';
+  align-items: stretch;
+
   @media ${(props) => props.theme.breakpoints.sm} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      'main main'
+      '. .'
+      '. .';
   }
 `;
 
 export const ProjectCard = styled.article`
-  min-height: 300px;
-  color: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  padding: 3rem;
-  border-style: solid;
-  border-image-slice: 1;
-  border-width: 5px;
-  border-image-source: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(132, 45, 253, 1) 100%);
+  border: 1px solid white;
+  padding: 2rem;
+  color: black;
+  box-shadow: 0 0 1px 2px #d0d0d0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 1rem;
+  }
+`;
 
+export const Link = styled.a`
+  color: #d4c0c0;
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  background: #6b3030;
+  border-radius: 15px;
+  transition: 0.5s;
   &:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: #801414;
   }
 `;

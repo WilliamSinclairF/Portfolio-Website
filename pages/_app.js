@@ -1,6 +1,3 @@
-import '../styles/globals.css';
-import '../styles/utils.css';
-import 'normalize.css/normalize.css';
 import Head from 'next/head';
 import Theme from '../styles/theme';
 
@@ -14,6 +11,7 @@ function App({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>William Sinclair&apos;s Portfolio</title>
       </Head>
       <Component {...pageProps} />
     </Theme>
