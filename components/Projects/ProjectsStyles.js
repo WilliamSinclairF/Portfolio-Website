@@ -9,24 +9,17 @@ export const ProjectsContainer = styled.div`
   grid-template-areas:
     'main main main'
     '. . .';
-  align-items: stretch;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      'main main'
-      '. .'
-      '. .';
+    display: flex;
+    flex-direction: column;
+    place-items: center;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      'main main'
-      '. .'
-      '. .';
+    display: flex;
+    flex-direction: column;
+    place-items: center;
   }
 `;
 
@@ -38,22 +31,23 @@ export const ProjectCard = styled.article`
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 1rem;
   }
 `;
 
-export const Link = styled.a`
-  color: #d4c0c0;
-  font-size: 1.6rem;
-  padding: 1rem 1.5rem;
-  background: #6b3030;
-  border-radius: 15px;
-  transition: 0.5s;
-  &:hover {
-    background: #801414;
-  }
+export const TagsContainer = styled.div`
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
+
+export const Tag = styled.li`
+  margin: 5px;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: aliceblue;
 `;
