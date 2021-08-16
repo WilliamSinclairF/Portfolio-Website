@@ -4,8 +4,8 @@ import Image from 'next/image';
 import Layout from '../../components/common/Layout/Layout';
 import { projects } from '../../constants/constants';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { Container } from './ProjectDetailStyles';
 import Button from '../../components/common/Button';
+import styled from 'styled-components';
 
 export const getStaticPaths = async () => {
   const paths = projects.map((project) => {
@@ -24,6 +24,14 @@ export const getStaticProps = async (context) => {
     props: { project },
   };
 };
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  height: auto;
+`;
 
 const ProjectDetailPage = ({ project }) => {
   return (

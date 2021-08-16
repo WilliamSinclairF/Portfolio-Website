@@ -14,7 +14,7 @@ export const ProjectDetail = ({ project, children }) => {
       <SectionText>{project.shortDescription}</SectionText>
       <TagsContainer>
         {project.tags.map((tag) => (
-          <Tag>{tag}</Tag>
+          <Tag key={tag}>{tag}</Tag>
         ))}
       </TagsContainer>
       <Link passHref href={`/projects/${project.id}`}>
