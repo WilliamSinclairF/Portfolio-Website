@@ -1,7 +1,7 @@
 import { Hero } from '../components/Hero/Hero';
-import { AboutMe } from '../components/AboutMe';
+import { AboutMe } from '../components/AboutMe/AboutMe';
 import Layout from '../components/common/Layout/Layout';
-import NavBar from '../components/common/Navbar/NavBar';
+import Navbar from '../components/common/Navbar/Navbar';
 import { Section } from '../styles/GlobalComponents';
 import Projects from '../components/Projects/Projects';
 import { Skills } from '../components/Skills/Skills';
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Layout bg="linear-gradient(to right, rgba(34, 193, 195, 1), rgba(132, 45, 253, 1))">
-        <NavBar />
+        <Navbar />
         <Section id="hero">
           <Hero />
         </Section>
@@ -30,7 +30,7 @@ export default function Home() {
       </Layout>
 
       <Layout>
-        <Section id="about" style={{ height: '50vh' }}>
+        <Section id="about">
           <AboutMe />
         </Section>
       </Layout>

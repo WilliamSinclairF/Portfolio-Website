@@ -12,7 +12,7 @@ export const Hero = () => {
         Nice to meet you!
       </SectionTitle>
       <ImageContainer>
-        <HeroImage height="440px" />
+        <HeroImage height="440" />
       </ImageContainer>
       <SectionText center>
         I&apos;m a fearless software developer with a passion for learning based in Montreal.

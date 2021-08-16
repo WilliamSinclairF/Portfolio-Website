@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
@@ -35,6 +36,12 @@ export const ProjectCard = styled.article`
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 1rem;
   }
+`;
+
+export const ProjectImageContainer = styled.div`
+  width: 100%;
+  height: auto;
+  text-align: center;
 `;
 
 export const TagsContainer = styled.div`
