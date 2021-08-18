@@ -13,7 +13,7 @@ export default function Navbar() {
     <NavContainer>
       {navItems.map((i) => (
         <NavListItem key={i.name}>
-          <Link href={i.link}>
+          <Link passHref href={i.link}>
             <NavLink>{i.name}</NavLink>
           </Link>
         </NavListItem>

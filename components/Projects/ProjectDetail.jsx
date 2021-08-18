@@ -9,7 +9,14 @@ export const ProjectDetail = ({ project, children }) => {
     <ProjectCard key={project.name} style={{ gridArea: project.id === 1 && 'main' }}>
       <SectionSubHeader>{project.name}</SectionSubHeader>
       <ProjectImageContainer>
-        <Image src={project.image} alt="Project photo" height="400" width="528" objectFit="contain" />
+        <Image
+          src={project.image}
+          alt="Project photo"
+          height="400"
+          width="528"
+          objectFit="contain"
+          placeholder="blur"
+        />
       </ProjectImageContainer>
       <SectionText>{project.shortDescription}</SectionText>
       <TagsContainer>

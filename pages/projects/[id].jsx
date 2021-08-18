@@ -41,7 +41,14 @@ const ProjectDetailPage = ({ project }) => {
         <Section>
           <Container>
             <SectionTitle>{project.name}</SectionTitle>
-            <Image src={project.image} height="800" width="1200" objectFit="contain" />
+            <Image
+              src={project.image}
+              height="800"
+              width="1200"
+              objectFit="contain"
+              placeholder="blur"
+              alt="Project image"
+            />
             <SectionText>{project.description}</SectionText>
             <Button href={project.github}>Source code</Button>
           </Container>
