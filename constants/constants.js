@@ -1,3 +1,7 @@
+import rocketElevators from '../public/images/rocket elevators 1.png';
+import superPosFrontEnd from '../public/images/react-pos-frontend.png';
+import superPosBackEnd from '../public/images/nodejs-original-wordmark.svg';
+
 export const projects = [
   {
     id: 1,
@@ -5,7 +9,7 @@ export const projects = [
     shortDescription: 'A Ruby On Rails app with user auth, user permissions, forms, data validation and more',
     description: `This project was realized at the coding bootcamp I attended. Rocket Elevators is a fictive elevator company and we were tasked with adding new features to their website every week. The site is built with Ruby On Rails, MySQL and PostgreSQL. It has many features such as user accounts, various forms, a backoffice to manage the databases and various graphs to visualize the fictive company's data.`,
     tags: ['Ruby On Rails', 'Javascript', 'HTML', 'CSS', 'MySQL', 'PostgreSQL'],
-    image: '/images/rocket elevators 1.png',
+    image: rocketElevators,
     github: 'https://github.com/WilliamSinclairF/Rocket-Elevator-Foundation',
   },
   {
@@ -15,7 +19,7 @@ export const projects = [
     description:
       'Super POS is a cloud based point of sale built with React, NodeJS, TypeScript and Firebase. Businesses can use it to track their sales, inventory and manage different stores under the same account. It is currently still a work in progress but accounts and sales are functional.',
     tags: ['React', 'TypeScript'],
-    image: '/images/react-pos-frontend.png',
+    image: superPosFrontEnd,
     github: 'https://github.com/WilliamSinclairF/super-pos',
   },
 

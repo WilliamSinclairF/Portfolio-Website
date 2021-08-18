@@ -15,7 +15,7 @@ export const ProjectDetail = ({ project, children }) => {
           height="400"
           width="528"
           objectFit="contain"
-          placeholder="blur"
+          placeholder={typeof project.image !== 'string' && 'blur'}
         />
       </ProjectImageContainer>
       <SectionText>{project.shortDescription}</SectionText>
