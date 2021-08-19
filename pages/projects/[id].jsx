@@ -55,7 +55,6 @@ const ProjectDetailPage = ({ project }) => {
             ) : (
               <SectionText>{project.description}</SectionText>
             )}
-            <SectionText>{project.description}</SectionText>
           </Container>
         </Section>
       </Layout>
