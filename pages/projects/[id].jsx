@@ -51,9 +51,7 @@ const ProjectDetailPage = ({ project }) => {
               alt="Project image"
             />
             {project.paragraphs ? (
-              project.paragraphs.map((paragraph) => (
-                <SectionText key={`${paragraph[0]}${paragraph[1]}${paragraph[2]}`}>{paragraph}</SectionText>
-              ))
+              project.paragraphs.map((paragraph, i) => <SectionText key={i}>{paragraph}</SectionText>)
             ) : (
               <SectionText>{project.description}</SectionText>
             )}
