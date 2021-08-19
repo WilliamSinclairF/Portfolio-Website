@@ -31,18 +31,17 @@ export const SectionText = styled.p`
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
-  padding-bottom: 3.6rem;
+  padding-bottom: 3rem;
+  margin-bottom: 1rem;
   color: ${(props) => (props.fontColor ? props.fontColor : props.theme.colors.primary2)};
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     font-size: 20px;
     line-height: 32px;
-    padding-bottom: 24px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 16px;
   }
 `;
 

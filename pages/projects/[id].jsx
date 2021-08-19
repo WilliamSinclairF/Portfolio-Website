@@ -30,7 +30,7 @@ const Container = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 1rem;
-  height: auto;
+  height: 100%;
 `;
 
 const ProjectDetailPage = ({ project }) => {
@@ -41,16 +41,21 @@ const ProjectDetailPage = ({ project }) => {
         <Section>
           <Container>
             <SectionTitle>{project.name}</SectionTitle>
+            <Button href={project.github}>Source code</Button>
             <Image
               src={project.image}
-              height="800"
-              width="1200"
+              height="600"
+              width="1000"
               objectFit="contain"
-              placeholder="blur"
+              placeholder={typeof project.image !== 'string' && 'blur'}
               alt="Project image"
             />
+            {project.paragraphs ? (
+              project.paragraphs.map((paragraph) => <SectionText>{paragraph}</SectionText>)
+            ) : (
+              <SectionText>{project.description}</SectionText>
+            )}
             <SectionText>{project.description}</SectionText>
-            <Button href={project.github}>Source code</Button>
           </Container>
         </Section>
       </Layout>

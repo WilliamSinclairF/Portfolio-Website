@@ -1,6 +1,5 @@
 import rocketElevators from '../public/images/rocket elevators 1.png';
 import superPosFrontEnd from '../public/images/react-pos-frontend.png';
-import superPosBackEnd from '../public/images/nodejs-original-wordmark.svg';
 
 export const projects = [
   {
@@ -15,7 +14,7 @@ export const projects = [
   {
     id: 2,
     name: 'Super POS - Frontend',
-    shortDescription: 'A point of sale made in React',
+    shortDescription: 'A point of sale made in React (WIP)',
     description:
       'Super POS is a cloud based point of sale built with React, NodeJS, TypeScript and Firebase. Businesses can use it to track their sales, inventory and manage different stores under the same account. It is currently still a work in progress but accounts and sales are functional.',
     tags: ['React', 'TypeScript'],
@@ -26,7 +25,7 @@ export const projects = [
   {
     id: 3,
     name: 'Super POS - Backend',
-    shortDescription: 'The NodeJS backend of the point of sale project',
+    shortDescription: 'The NodeJS backend of the point of sale project (WIP)',
 
     description:
       'This is the backend for the Super point of sale project. It uses a Postgres database as well as firebase for user authentication. TypeORM was used to speed up development.',
@@ -39,8 +38,14 @@ export const projects = [
     id: 4,
     name: 'This website!',
     shortDescription: 'NextJS for speed and SEO, featuring styled-components and dynamic routes',
-    description:
-      'NextJS was used over vanila React to help with SEO and because I had wanted to try it out for a while. I may also add a blog later down the line so it was an overall good fit for this project.',
+    description: '',
+    paragraphs: [
+      `NextJS was used to help with SEO and minimize the amount of extra stuff that the client needs to run to make things as snappy as possible. With that said, I also just felt like giving it a try since I had heard a lot about it and I'm glad I did as I had a fun time understanding it's tooling and the things it does differently compared to vanila React.`,
+      ,
+      `I opted to use Styled Components instead of a css library like Bootstrap and others or plain CSS because I love the developer experience that it provides. It just feels more natural to me to use components instead of classes. The project initially started with regular CSS but after a bit, I decided to scrap everything and made the switch and I haven't looked back since!`,
+      ,
+      `Vercel was used for hosting mainly due to it's current $0 price tag but the painless deployment experience is certainly a great plus.`,
+    ],
     tags: ['React', 'NextJS', 'styled-components'],
     image: '/images/nextjs-original-wordmark.svg',
     github: 'https://github.com/WilliamSinclairF/portfolio-website',

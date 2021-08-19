@@ -5,7 +5,6 @@ export const NavContainer = styled.nav`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 1rem;
   padding-top: 2rem;
 `;
 
