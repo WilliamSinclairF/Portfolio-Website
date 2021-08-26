@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
+  width: 100%;
   display: grid;
   padding: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
@@ -32,6 +33,7 @@ export const ProjectCard = styled.article`
   display: flex;
   flex-direction: column;
   place-items: center;
+  width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 1rem;
   }
